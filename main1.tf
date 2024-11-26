@@ -13,7 +13,7 @@ resource "aws_launch_template" "example" {
 
   network_interfaces {
     associate_public_ip_address = true
-    security_groups             = ["sg-061f9ad74b6f55705"] # Replace with your security group
+    security_groups             = ["sg-03e0a56e957f8620c"] # Replace with your security group
   }
 }
 
@@ -27,7 +27,7 @@ resource "aws_autoscaling_group" "example" {
   min_size         = var.min_size
   max_size         = var.max_size
   desired_capacity = var.desired_capacity
-  vpc_zone_identifier = ["subnet-078643fa1103123ec"] # Replace with your subnet ID
+  vpc_zone_identifier = ["subnet-09667bd9fff900b10"] # Replace with your subnet ID
 
   tag {
     key                 = "Name"
